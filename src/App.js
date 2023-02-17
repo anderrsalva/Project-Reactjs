@@ -5,16 +5,27 @@ import './App.css';
 
 function App() {
 
-  // saludar()
+  // saludar() 
   // chau()
+
+  //Inserción de codigo js en JSX
+  const profesor = 'Conrado Lanusse'
+  const tutor = 'Santiago Varela'
+
+  const estilos = {
+    color: 'red',
+    marginTop: 20,
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p style={estilos}>
+          Bienvendios a React
         </p>
+        <h4>Profe {profesor} </h4>
+        <h5>Tutor {tutor} </h5>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -24,13 +35,17 @@ function App() {
           Learn React
         </a>
       </header>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil eos porro illum impedit culpa rem molestias expedita quisquam, perspiciatis adipisci, quibusdam dolorum illo voluptates corrupti laborum commodi veritatis qui ullam.</p>
-      <ol>
+
+      <section>
+      <ul>
         <li>nombre</li>
         <li>apellido</li>
         <li>edad</li>
         <li>rol</li>
-      </ol>
+      </ul>
+      </section>
+
+      
     </div>
   );
 }
