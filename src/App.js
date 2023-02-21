@@ -1,23 +1,16 @@
-//import Noticias from './components/Noticias.js'
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { Navbar } from "./components/Navbar/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Noticias } from './components/Noticias.js'
-import { Tutores } from './components/Tutores.js'
 
 function App() {
 
   return (
     <div className="App">
-      <h2>Hola mundo</h2>  
-      <hr/>
-      <Tutores/>
-
-      <hr/>
-      <Noticias/>  
-
+      <Navbar />  
+      <ItemListContainer greeting="Se realiza el tratamiento para la limpieza y desperfectos del auto."/>
     </div>
-
-
-  );
+  )
 }
 
 export default App;
