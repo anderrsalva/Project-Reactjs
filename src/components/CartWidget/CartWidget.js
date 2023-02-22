@@ -1,10 +1,11 @@
 import './CartWidget.scss'
+import logoCarrito from './carritoCompras.png'
 
 export const CartWidget = () => {
 
     return (
         <div className="header">
-            <h1 className='header__carrito'>🛒</h1>
+            <img src={logoCarrito} alt="logo" className='header__carrito'/>
             <span className='header__cantidad'>0</span>
         </div>
     )

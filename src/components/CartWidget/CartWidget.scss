@@ -1,12 +1,18 @@
-.header__carrito{
-    max-width: 100px;
+.header{
+        .header__carrito{
+            max-width: 100px;
+            height: 40px;
+        }
+    
+        .header__cantidad{  
+            background-color: rgb(141, 0, 0);
+            color: white;
+            border-radius: 45%;
+            font-size: 20px;
+            top: 55px;
+            position: fixed;
+        }
 }
 
-.header__cantidad{
-    background-color: rgb(177, 17, 17);
-    color: white;
-    border-radius: 55%;
-    font-size: 18px;
-    top: 37px;
-    position: fixed;
-}
+
+

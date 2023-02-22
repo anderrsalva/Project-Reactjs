@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />  
-      <ItemListContainer greeting="Se realiza el tratamiento para la limpieza y desperfectos del auto."/>
+      <ItemListContainer greeting="Ver trabajos realizados sobre el servicio a solicitar."/>
     </div>
   )
 }
