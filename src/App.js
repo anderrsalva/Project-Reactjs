@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar />  
       <Banner />
-      <ItemListContainer greeting="Ver trabajos realizados sobre el servicio a solicitar."/>
+      <ItemListContainer/>
     </div>
   )
 }
