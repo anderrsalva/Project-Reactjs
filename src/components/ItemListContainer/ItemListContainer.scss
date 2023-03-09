@@ -3,9 +3,20 @@
 .contenedor{
     margin: 40px auto;
     max-width: 900px;
+
     h1{
         font-family: 'Gantari', sans-serif;
         font-size: 35px;
         padding-bottom: 15px;
     }
-}
+
+        .card__prod{
+            display: grid;
+            justify-content:space-around;
+            grid-template-columns: 3fr 3fr 3fr;
+            gap: 40px;
+        }
+
+        
+}   
+
