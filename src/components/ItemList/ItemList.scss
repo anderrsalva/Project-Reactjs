@@ -1,0 +1,8 @@
+
+
+.card__prod{
+        display: grid;
+        justify-content:space-around;
+        grid-template-columns: 3fr 3fr 3fr;
+        gap: 40px;
+}
