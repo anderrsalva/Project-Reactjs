@@ -3,42 +3,145 @@
         "id": 1,
         "name": "Producto 1",
         "description": "Lorem ipsum producto 1",
-        "price": "A presupuestar",
-        "img": "/img/interior/interior_auto.jpg"
+        "price": 100,
+        "img": "/img/interior/interior_auto.jpg",
+        "category": "interior"
     },
     {
         "id": 2,
         "name": "Producto 2",
         "description": "Lorem ipsum producto 2",
-        "price": "A presupuestar",
-        "img": "/img/producto2.jpeg"
+        "price": 200,
+        "img": "/img/producto2.jpeg",
+        "category": "interior"
     },
     {
         "id": 3,
         "name": "Producto 3",
         "description": "Lorem ipsum producto 3",
-        "price": "A presupuestar",
-        "img": "/img/producto.jpeg"
+        "price": 300,
+        "img": "/img/producto.jpeg",
+        "category": "interior"
     },
     {
         "id": 4,
         "name": "Producto 4",
         "description": "Lorem ipsum producto 4",
-        "price": "A presupuestar",
-        "img": "/img/producto.jpeg"
+        "price": 400,
+        "img": "/img/producto.jpeg",
+        "category": "interior"
     },
     {
         "id": 5,
         "name": "Producto 5",
         "description": "Lorem ipsum producto 5",
-        "price": "A presupuestar",
-        "img": "/img/producto.jpeg"
+        "price": 500,
+        "img": "/img/producto.jpeg",
+        "category": "interior"
     },
     {
         "id": 6,
         "name": "Producto 6",
         "description": "Lorem ipsum producto 6",
-        "price": "A presupuestar",
-        "img": "/img/producto.jpeg"
+        "price": 600,
+        "img": "/img/producto.jpeg",
+        "category": "interior"
+    },
+
+    {
+        "id": 7,
+        "name": "Producto 7",
+        "description": "Lorem ipsum producto 7",
+        "price": 700,
+        "img": "/img/interior/interior_auto.jpg",
+        "category": "interior"
+    },
+    {
+        "id": 8,
+        "name": "Producto 8",
+        "description": "Lorem ipsum producto 8",
+        "price": 800,
+        "img": "/img/producto2.jpeg",
+        "category": "exterior"
+    },
+    {
+        "id": 9,
+        "name": "Producto 9",
+        "description": "Lorem ipsum producto 9",
+        "price": 900,
+        "img": "/img/producto.jpeg",
+        "category": "exterior"
+    },
+    {
+        "id": 10,
+        "name": "Producto 10",
+        "description": "Lorem ipsum producto 10",
+        "price": 1000,
+        "img": "/img/producto.jpeg",
+        "category": "exterior"
+    },
+    {
+        "id": 11,
+        "name": "Producto 11",
+        "description": "Lorem ipsum producto 11",
+        "price": 2000,
+        "img": "/img/producto.jpeg",
+        "category": "exterior"
+    },
+    {
+        "id": 12,
+        "name": "Producto 12",
+        "description": "Lorem ipsum producto 12",
+        "price": 3000,
+        "img": "/img/producto.jpeg",
+        "category": "exterior"
+    },
+    {
+        "id": 13,
+        "name": "Producto 13",
+        "description": "Lorem ipsum producto 13",
+        "price": 4000,
+        "img": "/img/interior/interior_auto.jpg",
+        "category": "exterior"
+    },
+    {
+        "id": 14,
+        "name": "Producto 14",
+        "description": "Lorem ipsum producto 14",
+        "price": 5000,
+        "img": "/img/producto2.jpeg",
+        "category": "exterior"
+    },
+    {
+        "id": 15,
+        "name": "Producto 15",
+        "description": "Lorem ipsum producto 15",
+        "price": 16000,
+        "img": "/img/producto.jpeg",
+        "category": "maquinas"
+    },
+    {
+        "id": 16,
+        "name": "Producto 16",
+        "description": "Lorem ipsum producto 16",
+        "price": 10000,
+        "img": "/img/producto.jpeg",
+        "category": "maquinas"
+    },
+    {
+        "id": 17,
+        "name": "Producto 17",
+        "description": "Lorem ipsum producto 17",
+        "price": 80000,
+        "img": "/img/producto.jpeg",
+        "category": "maquinas"
+    },
+    {
+        "id": 18,
+        "name": "Producto 18",
+        "description": "Lorem ipsum producto 18",
+        "price": 55000,
+        "img": "/img/producto.jpeg",
+        "category": "maquinas"
     }
 ]

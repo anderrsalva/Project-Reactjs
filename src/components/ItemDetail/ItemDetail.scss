@@ -1,0 +1,19 @@
+.card__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.card__content{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 120px;
+}
+
+.button__shop{
+    margin: 20px 0;
+}
