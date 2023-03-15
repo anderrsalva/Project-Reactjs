@@ -4,7 +4,7 @@
         "name": "Producto 1",
         "description": "Lorem ipsum producto 1",
         "price": 100,
-        "img": "/img/interior/interior_auto.jpg",
+        "img": "/img/interior/interior1.jpg",
         "category": "interior"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Producto 2",
         "description": "Lorem ipsum producto 2",
         "price": 200,
-        "img": "/img/producto2.jpeg",
+        "img": "/img/interior/interior8.jpg",
         "category": "interior"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Producto 3",
         "description": "Lorem ipsum producto 3",
         "price": 300,
-        "img": "/img/producto.jpeg",
+        "img": "/img/interior/interior3.jpg",
         "category": "interior"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Producto 4",
         "description": "Lorem ipsum producto 4",
         "price": 400,
-        "img": "/img/producto.jpeg",
+        "img": "/img/interior/interior4.jpg",
         "category": "interior"
     },
     {
@@ -36,7 +36,7 @@
         "name": "Producto 5",
         "description": "Lorem ipsum producto 5",
         "price": 500,
-        "img": "/img/producto.jpeg",
+        "img": "/img/interior/interior5.jpg",
         "category": "interior"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Producto 6",
         "description": "Lorem ipsum producto 6",
         "price": 600,
-        "img": "/img/producto.jpeg",
+        "img": "/img/interior/interior6.jpg",
         "category": "interior"
     },
 
@@ -53,7 +53,7 @@
         "name": "Producto 7",
         "description": "Lorem ipsum producto 7",
         "price": 700,
-        "img": "/img/interior/interior_auto.jpg",
+        "img": "/img/interior/interior7.png",
         "category": "interior"
     },
     {
@@ -61,7 +61,7 @@
         "name": "Producto 8",
         "description": "Lorem ipsum producto 8",
         "price": 800,
-        "img": "/img/producto2.jpeg",
+        "img": "/img/exterior/exterior9.jpg",
         "category": "exterior"
     },
     {
@@ -69,7 +69,7 @@
         "name": "Producto 9",
         "description": "Lorem ipsum producto 9",
         "price": 900,
-        "img": "/img/producto.jpeg",
+        "img": "/img/exterior/exterior5.jpg",
         "category": "exterior"
     },
     {
@@ -77,7 +77,7 @@
         "name": "Producto 10",
         "description": "Lorem ipsum producto 10",
         "price": 1000,
-        "img": "/img/producto.jpeg",
+        "img": "/img/exterior/exterior8.jpg",
         "category": "exterior"
     },
     {
@@ -85,7 +85,7 @@
         "name": "Producto 11",
         "description": "Lorem ipsum producto 11",
         "price": 2000,
-        "img": "/img/producto.jpeg",
+        "img": "/img/exterior/exterior7.jpg",
         "category": "exterior"
     },
     {
@@ -93,7 +93,7 @@
         "name": "Producto 12",
         "description": "Lorem ipsum producto 12",
         "price": 3000,
-        "img": "/img/producto.jpeg",
+        "img": "/img/exterior/exterior6.jpg",
         "category": "exterior"
     },
     {
@@ -101,7 +101,7 @@
         "name": "Producto 13",
         "description": "Lorem ipsum producto 13",
         "price": 4000,
-        "img": "/img/interior/interior_auto.jpg",
+        "img": "/img/exterior/exterior4.jpg",
         "category": "exterior"
     },
     {
@@ -109,7 +109,7 @@
         "name": "Producto 14",
         "description": "Lorem ipsum producto 14",
         "price": 5000,
-        "img": "/img/producto2.jpeg",
+        "img": "/img/exterior/exterior10.jpeg",
         "category": "exterior"
     },
     {
@@ -117,7 +117,7 @@
         "name": "Producto 15",
         "description": "Lorem ipsum producto 15",
         "price": 16000,
-        "img": "/img/producto.jpeg",
+        "img": "/img/maquinas/aspiradora_inalambrica.jpg",
         "category": "maquinas"
     },
     {
@@ -125,7 +125,7 @@
         "name": "Producto 16",
         "description": "Lorem ipsum producto 16",
         "price": 10000,
-        "img": "/img/producto.jpeg",
+        "img": "/img/maquinas/aspiradora1.png",
         "category": "maquinas"
     },
     {
@@ -133,7 +133,7 @@
         "name": "Producto 17",
         "description": "Lorem ipsum producto 17",
         "price": 80000,
-        "img": "/img/producto.jpeg",
+        "img": "/img/maquinas/compre.jpg",
         "category": "maquinas"
     },
     {
@@ -141,7 +141,7 @@
         "name": "Producto 18",
         "description": "Lorem ipsum producto 18",
         "price": 55000,
-        "img": "/img/producto.jpeg",
+        "img": "/img/maquinas/flex_xfe.jpg",
         "category": "maquinas"
     }
 ]

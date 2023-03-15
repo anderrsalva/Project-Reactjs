@@ -7,7 +7,7 @@ import './ItemList.scss'
 export const ItemList = ({items})  => {
   return (
     <div>
-      <h2>Servicios y Productos</h2>
+      <h2>Productos</h2>
             <hr/>
             {/* mostrar el array de productos*/}
 
