@@ -21,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={ <Banner/> } />
           <Route path="/servicios" element={ <Servicios /> }></Route>
+          <Route path="/productos/" element={ <ItemListContainer/> } />
           <Route path="/productos/:categoryId" element={ <ItemListContainer/> } />
           <Route path="/detail/:itemId" element={ <ItemDetailContainer/> } />
           <Route path="*" element={ <Navigate to="/" /> } />
