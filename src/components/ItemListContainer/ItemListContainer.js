@@ -1,8 +1,13 @@
 import { useEffect, useState } from 'react'
 import './ItemListContainer.scss'
-import { pedirDatos } from '../../helpers/pedirDatos';
-import { ItemList } from '../ItemList/ItemList';
-import { useParams } from 'react-router-dom';
+import { pedirDatos } from '../../helpers/pedirDatos'
+import { ItemList } from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom'
+import Spinner from '../Spinner/Spinner'
+
+
+
+
 
 export const ItemListContainer = () => {
 
@@ -38,13 +43,15 @@ export const ItemListContainer = () => {
 
     
     return(
-        <div className="contenedor">
+        //Ver el estilo del spinner
+        <div className='contenedor'>
             {
                 loading
-                ? <h2>Cargando...</h2>
+                ? <Spinner/>
                 : <ItemList items={productos}/>
             }
         </div>
+        
     )
 }
 

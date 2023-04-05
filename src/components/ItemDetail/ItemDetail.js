@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import { ItemCounter } from '../ItemCounter/ItemCounter'
+import { ItemCount } from '../ItemCount/ItemCount'
 import './ItemDetail.scss'
 
+
+
 export const ItemDetail = ({item}) => {
+
+  const [cantidad, setCantidad] = useState(1);
+
+   const handleAgregar = () => {
+    const itemToCart = {
+      ...item,
+      cantidad
+    }
+    console.log(itemToCart)
+  }
+
   return (
     <div className='container my-5'>
         <h3>Detalle del producto</h3>
@@ -16,8 +28,12 @@ export const ItemDetail = ({item}) => {
                 <Card.Title>{item.name}</Card.Title>
                 <Card.Text>Los productos que se ofrecen pueden incluir desde cosméticos y limpiadores hasta piezas de rendimiento y personalización. El objetivo es brindar una experiencia de conducción más cómoda y agradable, al tiempo que se mejora la estética del vehículo.</Card.Text>
                 <Card.Text>Precio: {item.price}</Card.Text>
-                <ItemCounter />
-                <Button className='button__shop' variant="outline-danger">Agregar al carrito</Button>
+                <ItemCount
+                    max={item.stock}
+                    cantidad={cantidad}
+                    setCantidad={setCantidad}
+                    handleAgregar={handleAgregar}
+                />
             </Card.Body>
         </Card>
 
