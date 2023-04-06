@@ -17,3 +17,16 @@
 .button__shop{
     margin: 20px 0;
 }
+
+.boton-volver{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .boton-volver:hover{
+    background-color: rgb(94, 21, 21);
+  }
+  
