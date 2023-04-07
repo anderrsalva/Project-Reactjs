@@ -5,7 +5,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 
 
+
 export const Navbar = () => {
+
 
     return (
         <header className="header">
@@ -27,6 +29,7 @@ export const Navbar = () => {
                         </NavDropdown>
                     <CartWidget />
                 </nav>  
+                
             </div>
         </header>
     )

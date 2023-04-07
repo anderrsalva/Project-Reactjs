@@ -18,9 +18,23 @@ export const ItemCount = ({ max, cantidad, setCantidad, handleAgregar }) => {
 
   return (
     <div>
-      <button onClick={handleDecrement} className="btn btn-outline-danger">-</button>
+      <button 
+      onClick={handleDecrement} 
+      className={cantidad === 1 ? "btn btn-outline-danger" : "btn btn-outline-dark"}
+      disabled={cantidad === 1}
+      >
+        -
+      </button>
+
       <span className="mx-2">{cantidad}</span>
-      <button onClick={handleIncrement} className="btn btn-outline-danger">+</button>
+
+      <button onClick={handleIncrement} 
+      className={cantidad === max ? "btn btn-danger" : "btn btn-dark"}
+      disabled={cantidad === max}
+      >
+        +
+      </button>
+      
       <br/>
       <button onClick={handleAgregar} className="btn btn-outline-danger my-2">Agregar al carrito</button>
       {/* Ver donde vuelve para atras, darle la ruta indicada */}

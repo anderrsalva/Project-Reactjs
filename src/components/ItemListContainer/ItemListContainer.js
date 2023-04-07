@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import './ItemListContainer.scss'
-import { pedirDatos } from '../../helpers/pedirDatos'
 import { ItemList } from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
+import { collection, getDocs, query, where } from 'firebase/firestore'
+import { db } from '../../firebase/Config'
+
 
 
 
@@ -22,22 +24,31 @@ export const ItemListContainer = () => {
 
             setLoading(true)
 
-            pedirDatos(true)
-                .then((response) => {
+            // 1- referencia (sync)
 
-                    if(!categoryId){
-                        setProductos( response )
-                    }else{
-                        setProductos( response.filter((prod) => prod.category === categoryId))
-                    }
-                    
+            const productosRef = collection(db, "productos")
+            const q = categoryId 
+
+                        ? query(productosRef, where("category", "==" , categoryId))
+                        : productosRef
+            
+            // 2- pedir esa referencia (async)
+
+            getDocs(q)
+                .then((res) => {
+                    const docs = res.docs.map((doc) => {
+                        return {...doc.data(), id: doc.id}
+                    })
+
+                    console.log(docs)
+
+                    setProductos(docs)
                 })
-                .catch((error) => {
-                    console.log(error)
+
+                .finally(() => {
+                    setLoading(false)
                 })
-                 .finally(() => {
-                     setLoading(false)
-                 })
+
         }, [categoryId])
 
 

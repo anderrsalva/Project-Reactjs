@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { pedirProductoPorId } from '../../helpers/pedirDatos'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import Spinner from '../Spinner/Spinner'
+import { db } from '../../firebase/Config'
+import {doc, getDoc } from 'firebase/firestore'
+
 
 
 
@@ -16,15 +18,28 @@ const { itemId } = useParams()
 
 
 useEffect(() => {
-
     setLoading(true)
-    pedirProductoPorId(Number(itemId))
-        .then((resp) => {
-            setItem(resp)
+
+    // 1- referencia
+
+    const docRef = doc(db, "productos", itemId)
+
+
+    // 2- llamado aync
+
+    getDoc(docRef)
+        .then((doc) => {
+            console.log(doc.id)
+            console.log(doc.data())
+            setItem({
+                id: doc.id,
+                ...doc.data()
+            })
         })
         .finally(() => {
             setLoading(false)
         })
+    
 
 }, [])
 
