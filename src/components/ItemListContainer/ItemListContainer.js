@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
-import './ItemListContainer.scss'
 import { ItemList } from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../../firebase/Config'
+
+import './ItemListContainer.scss'
 
 
 
@@ -58,7 +59,7 @@ export const ItemListContainer = () => {
         <div className='contenedor'>
             {
                 loading
-                ? <Spinner/>
+                ? <div className='spinner-position'><Spinner/></div>
                 : <ItemList items={productos}/>
             }
         </div>
