@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+React JS | Proyecto Final
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Alumno: Salvatierra Jhon Anderson
 
-## Available Scripts
+Profesor: Conrado Lanusse
 
-In the project directory, you can run:
+Comisión: RJ39585
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Estética Vehicular E-commerce - Nordic
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este es un e-commerce dedicado a la venta de productos relacionados con la estética vehicular. Ofrecemos una amplia variedad de productos para el cuidado y mantenimiento de vehículos, desde productos de limpieza hasta herramientas y accesorios para personalizar tu vehículo.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Productos
+En nuestro catálogo encontrarás productos de las mejores marcas del mercado para el cuidado y mantenimiento de tu vehículo, como ceras, pulimentos, shampoos, selladores, limpiadores de llantas, , máquinas, entre otros. Además, podrás acceder por secciones y/o catálogos donde quieras posicionarte (Interior - Exterior - Máquinas)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Proceso de compra
+Para comprar en nuestra tienda en línea, sigue los siguientes pasos:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navega por nuestro catálogo separado por categorías (Interior - Exterior - Máquinas) y selecciona los productos que deseas comprar.
+Agrega los productos a tu carrito de compra.
+Revisa tu carrito de compra y asegúrate de que todos los productos y cantidades sean correctos.
+Ingresa tus datos de envío y facturación.
+Confirma tu compra.
+Envío y entrega
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Contacto
+Si tienes alguna duda o consulta, no dudes en contactarnos a través de nuestro correo electrónico [insertar correo] o a través de nuestras redes sociales [insertar links]. Nuestro equipo de atención al cliente estará encantado de ayudarte.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Firebase
+Este proyecto utiliza Firebase como plataforma de desarrollo y su base de datos alojada en la nube para el almacenamiento y acceso a la información. tanto para almacenar el contenido de las cards y mismo guardar la información a la hora ed que el cliente realice la compra final de su pedido.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
