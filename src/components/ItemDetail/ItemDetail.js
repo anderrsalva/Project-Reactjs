@@ -1,12 +1,13 @@
 import React, { useContext, useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { ItemCount } from '../ItemCount/ItemCount'
-import './ItemDetail.scss'
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 import volver from './volver.png'
 import { useNavigate } from "react-router-dom";
 import { LowStockMsg } from './LowStockMsg';
+
+import './ItemDetail.scss'
 
 
 
@@ -55,7 +56,7 @@ export const ItemDetail = ({ item }) => {
           <Card.Text>Los productos que se ofrecen pueden incluir desde cosméticos y limpiadores hasta piezas de rendimiento y personalización. El objetivo es brindar una experiencia de conducción más cómoda y agradable, al tiempo que se mejora la estética del vehículo.</Card.Text>
           <Card.Text>Precio: {item.price}</Card.Text>
 
-          { item.stock <= 5 && <LowStockMsg stock={item.stock}/>}
+          {item.stock <= 5 && <LowStockMsg stock={item.stock} />}
 
           {
             isInCart(item.id)

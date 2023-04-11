@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useContext } from 'react'
 import { CartContext } from "../../context/CartContext"
-import { addDoc, collection, getDoc, updateDoc } from 'firebase/firestore'
+import { addDoc, collection } from 'firebase/firestore'
 import { Navigate, Link } from 'react-router-dom'
 import { db } from '../../firebase/Config'
 import iconComprobado from './comprobado.png'
@@ -65,17 +65,6 @@ export const Checkout = () => {
 
     const ordersRef = collection(db, 'orders')
 
-    // getDoc(docRef)
-    //   .then((doc) => {
-    //     if(doc.data().stock >= item.cantidad){
-    //       updateDoc(docRef, {
-    //         stock: doc.data().stock - item.cantidad
-    //       })
-    //     }else{
-    //       alert("No hay stock de: " +item.name)
-    //     }
-    //   })
-
 
     addDoc(ordersRef, orden)
       .then((doc) => {
@@ -91,7 +80,7 @@ export const Checkout = () => {
         <h2>¡Recibimos tu compra con éxito!</h2>
         <hr />
         <p>Muchas gracias por confiar en nosotros, te esperamos en tu próxima compra...</p>
-        <p>Guarda tu número de orden: #{orderId}</p>
+        <p>Guarda tu número de orden: <span className="checkout__orderId">#{orderId}</span></p>
         <Link className="btn btn-outline-dark my-3" to="/">Volver al inicio</Link>
       </div>
     )

@@ -27,13 +27,13 @@ function App() {
           <Route path="/productos/" element={<ItemListContainer />} />
           <Route path="/productos/:categoryId" element={<ItemListContainer />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/checkout" element={<Checkout/> }/>
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/detail/:itemId" element={<ItemDetailContainer />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
 
         <Footer />
- 
+
       </BrowserRouter>
     </CartProvider>
 

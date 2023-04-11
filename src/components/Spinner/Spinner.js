@@ -1,15 +1,16 @@
 import React from 'react'
-import './Spinner.scss'
 import PropagateLoader from "react-spinners/PropagateLoader";
 
+
+import './Spinner.scss'
 
 function Spinner() {
     return (
         <div className="spinner">
-            {<PropagateLoader 
-            color="#000000"
-            size={15}
-            speedMultiplier={1}
+            {<PropagateLoader
+                color="#000000"
+                size={15}
+                speedMultiplier={1}
             />}
         </div>
     )

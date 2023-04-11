@@ -1,3 +1,12 @@
 .order-container{
     padding: 65px;
 }
+
+.checkout__orderId {
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.checkout__orderId:hover {
+    color:brown;
+}

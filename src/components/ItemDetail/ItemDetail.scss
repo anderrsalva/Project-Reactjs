@@ -1,32 +1,29 @@
-.card__container{
+.card__container {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
-
-.card__content{
+.card__content {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
     margin: 120px;
+
+    .button__shop {
+        margin: 20px 0;
+    }
 }
 
-.button__shop{
-    margin: 20px 0;
-}
-
-.boton-volver{
+.boton-volver {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .boton-volver:hover{
-    background-color: rgb(94, 21, 21);
-  }
-  
+
+    &:hover {
+        background-color: rgb(94, 21, 21);
+    }
+}

@@ -15,55 +15,55 @@ import './ItemListContainer.scss'
 export const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([])
-    const [loading , setLoading] = useState(true)
-    
+    const [loading, setLoading] = useState(true)
+
     const { categoryId } = useParams()
-    console.log(categoryId) 
+    console.log(categoryId)
 
-    
-        useEffect(() => {
 
-            setLoading(true)
+    useEffect(() => {
 
-            // 1- referencia (sync)
+        setLoading(true)
 
-            const productosRef = collection(db, "productos")
-            const q = categoryId 
+        // 1- referencia (sync)
 
-                        ? query(productosRef, where("category", "==" , categoryId))
-                        : productosRef
-            
-            // 2- pedir esa referencia (async)
+        const productosRef = collection(db, "productos")
+        const q = categoryId
 
-            getDocs(q)
-                .then((res) => {
-                    const docs = res.docs.map((doc) => {
-                        return {...doc.data(), id: doc.id}
-                    })
+            ? query(productosRef, where("category", "==", categoryId))
+            : productosRef
 
-                    console.log(docs)
+        // 2- pedir esa referencia (async)
 
-                    setProductos(docs)
+        getDocs(q)
+            .then((res) => {
+                const docs = res.docs.map((doc) => {
+                    return { ...doc.data(), id: doc.id }
                 })
 
-                .finally(() => {
-                    setLoading(false)
-                })
+                console.log(docs)
 
-        }, [categoryId])
+                setProductos(docs)
+            })
+
+            .finally(() => {
+                setLoading(false)
+            })
+
+    }, [categoryId])
 
 
-    
-    return(
+
+    return (
         //Ver el estilo del spinner
         <div className='contenedor'>
             {
                 loading
-                ? <div className='spinner-position'><Spinner/></div>
-                : <ItemList items={productos}/>
+                    ? <div className='spinner-position'><Spinner /></div>
+                    : <ItemList items={productos} />
             }
         </div>
-        
+
     )
 }
 

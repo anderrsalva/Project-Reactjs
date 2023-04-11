@@ -1,15 +1,15 @@
 import React from 'react'
 
-export const LowStockMsg = ({stock}) => {
+export const LowStockMsg = ({ stock }) => {
     return (
-            <p><strong>
+        <p><strong>
 
-                {
-                    stock === 1
-                        ? `¡Queda sólo 1 unidad!`
-                        : `¡Quedan sólo ${stock} unidades!`
-                }
-            </strong></p>
+            {
+                stock === 1
+                    ? `¡Queda sólo 1 unidad!`
+                    : `¡Quedan sólo ${stock} unidades!`
+            }
+        </strong></p>
 
     )
 }
