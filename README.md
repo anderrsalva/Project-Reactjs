@@ -13,10 +13,12 @@ Este es un e-commerce dedicado a la venta de productos relacionados con la esté
 
 
 Productos
+
 En nuestro catálogo encontrarás productos de las mejores marcas del mercado para el cuidado y mantenimiento de tu vehículo, como ceras, pulimentos, shampoos, selladores, limpiadores de llantas, , máquinas, entre otros. Además, podrás acceder por secciones y/o catálogos donde quieras posicionarte (Interior - Exterior - Máquinas)
 
 
 Proceso de compra
+
 Para comprar en nuestra tienda en línea, sigue los siguientes pasos:
 
 Navega por nuestro catálogo separado por categorías (Interior - Exterior - Máquinas) y selecciona los productos que deseas comprar.
@@ -28,10 +30,12 @@ Envío y entrega
 
 
 Contacto
-Si tienes alguna duda o consulta, no dudes en contactarnos a través de nuestro correo electrónico [insertar correo] o a través de nuestras redes sociales [insertar links]. Nuestro equipo de atención al cliente estará encantado de ayudarte.
+
+Si tienes alguna duda o consulta, respecto a la compra no dudes en contactarnos a través de nuestras redes sociales o mismo nuestro nro de wpp. Nuestro equipo de atención al cliente estará encantado de ayudarte.
 
 
 Firebase
+
 Este proyecto utiliza Firebase como plataforma de desarrollo y su base de datos alojada en la nube para el almacenamiento y acceso a la información. tanto para almacenar el contenido de las cards y mismo guardar la información a la hora ed que el cliente realice la compra final de su pedido.
 
 
