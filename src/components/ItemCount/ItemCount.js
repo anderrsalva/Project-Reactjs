@@ -37,8 +37,6 @@ export const ItemCount = ({ max, cantidad, setCantidad, handleAgregar }) => {
       
       <br/>
       <button onClick={handleAgregar} className="btn btn-outline-danger my-2">Agregar al carrito</button>
-      {/* Ver donde vuelve para atras, darle la ruta indicada */}
-      {/* <button onClick={handlerVolver} className="btn boton-volver my-1"><img src={volver} alt="volver"/></button>  */}
     </div>
   );
 }

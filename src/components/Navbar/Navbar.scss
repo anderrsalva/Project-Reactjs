@@ -11,10 +11,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media all and (max-width: 450px){
+            width: 100%;
+        }
 
 
         .header__logo {
             max-width: 100px;
+            @media all and (max-width: 450px){
+                max-width: 75px;
+            }
         }
 
         .navbar {
@@ -23,6 +29,9 @@
             justify-content: center;
             gap: 20px;
             font-family: 'Gantari', sans-serif;
+            @media all and (max-width: 450px){
+               gap: 5px;
+            }
 
             .navbar__link {
                 color: white;

@@ -6,7 +6,7 @@ import './ItemList.scss'
 
 export const ItemList = ({ items }) => {
   return (
-    <div>
+    <div className='text-center my-5'>
       <h2>Productos</h2>
       <hr />
       {/* mostrar el array de productos*/}

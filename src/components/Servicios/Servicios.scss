@@ -1,6 +1,4 @@
 .services-container {
-    // max-width: 900px;
-    // margin: 0 auto;
     max-width: 1100px;
     margin: 0 auto;
     padding: 1px;
@@ -9,18 +7,33 @@
     h3 {
       font-size: 36px;
       font-weight: bold;
+      @media all and (max-width: 450px){
+        padding: 15px 5px;
+        margin: 5px;
+        font-size: 30px;
+    }
     }
     
     p {
       font-size: 18px;
       line-height: 1.5;
       margin-bottom: 50px;
+      @media all and (max-width: 450px){
+        padding: 15px 5px;
+        margin: 5px;
+    }
     }
     
     .cards-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      @media all and (max-width: 450px){
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
     }
     
     .card {
@@ -29,6 +42,10 @@
       border: 1px solid #ccc;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease-in-out;
+      @media all and (max-width: 450px){
+        width: 350px;
+        height: 650px;
+    }
       
       &:hover {
         transform: translateY(-10px);

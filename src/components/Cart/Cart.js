@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { BsFillTrashFill } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
+import iconVacio from './vacio.png'
 
 import './Cart.scss'
 
@@ -12,11 +13,18 @@ export const Cart = () => {
 
     if (cart.length === 0) {
         return (
-            <div className='container my-5'>
+            <div className='container my-5 '>
+                <div className='relleno-content'>
                 <h2>No agregaste ningún producto</h2>
+                <img src={iconVacio} alt="vacio" />
                 <hr />
-                <Link to="/productos/" className='btn btn-outline-danger'>Ir a comprar</Link>
+                </div>
+                <div className='contenido-relleno'>
+                    <p>Para finalizar la compra, agrega lo que estés buscando.</p>
+                    <Link to="/productos/" className='btn btn-outline-danger'>Volver al catálogo</Link>
+                </div>
             </div>
+
         )
 
     }

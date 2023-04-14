@@ -55,7 +55,6 @@ export const ItemListContainer = () => {
 
 
     return (
-        //Ver el estilo del spinner
         <div className='contenedor'>
             {
                 loading
